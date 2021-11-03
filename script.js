@@ -8,8 +8,8 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
+        question: "What are they srvice models from least abstraction to most abstract?",
+        a: "Infratructure as a Service",
         b: "Cascading Style Sheets",
         c: "Cascading Simple Sheets",
         d: "Cars SUVs Sailboats",
