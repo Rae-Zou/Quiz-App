@@ -1,4 +1,4 @@
-const quizData = [
+const myQuiz = [
     {
         question: "How many layers in TCP/IP reference model?",
         a: "7",
@@ -8,27 +8,27 @@ const quizData = [
         correct: "d",
     },
     {
-        question: "What are they srvice models from least abstraction to most abstract?",
-        a: "Infratructure as a Service",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
+        question: "What is the length of a MAC address?",
+        a: "36",
+        b: "42",
+        c: "48",
+        d: "96",
+        correct: "c",
+    },
+    {
+        question: "Which of the following is a class B IPv4 address?",
+        a: "223.1.1.0",
+        b: "126.3.1.1",
+        c: "190.3.2.1",
+        d: "224.0.1.2",
         correct: "b",
     },
     {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
-        correct: "a",
-    },
-    {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
+        question: "What are they srvice models from least abstraction to most abstract?",
+        a: "IaaS PaaS SaaS Caas FaaS",
+        b: "IaaS Caas PaaS FaaS SaaS",
+        c: "PaaS SaaS IaaS Caas FaaS",
+        d: "SaaS Caas IaaS PaaS FaaS",
         correct: "b",
     },
 ];
@@ -50,7 +50,7 @@ loadQuiz()
 function loadQuiz() {
     deselectAnswers()
 
-    const currentQuizData = quizData[currentQuiz]
+    const currentQuizData = myQuiz[currentQuiz]
 
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
@@ -79,18 +79,18 @@ submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     
     if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
+        if(answer === myQuiz[currentQuiz].correct) {
             score++
         }
 
         currentQuiz++
 
-        if(currentQuiz < quizData.length) {
+        if(currentQuiz < myQuiz.length) {
             loadQuiz()
         } else {
             quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-                <button onclick="location.reload()">Reload</button>
+                <h2>You got questions ${score}/${myQuiz.length} correctly</h2>
+                <button onclick="location.reload()">Try again</button>
             `
         }
     }
