@@ -2,7 +2,7 @@
 A useful study notes for course NWEN243 - Clouds and Networking
 
 To checkout the notes on webpage, please click this link:
-https://computer-networks.w3spaces.com
+https://computer-networks.w3spaces.com/quiz.html?bypass-cache=1636151621
 
 
 ## References:
