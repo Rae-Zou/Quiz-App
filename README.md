@@ -1,6 +1,6 @@
 # A mini `Quiz App`
 
-A useful study notes for Clouds and Networking. Questions are about the basic concepts of networking and cloud computing.
+Questions are about the basic concepts of networking and cloud computing.
 
 [Quiz App Demo](https://computer-networks.w3spaces.com/quiz.html?bypass-cache=1636151621)
 
