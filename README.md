@@ -2,7 +2,7 @@
 
 Questions are about the basic concepts of networking and cloud computing.
 
-[Quiz App Demo](https://computer-networks.w3spaces.com/quiz.html?bypass-cache=1636151621)
+[Quiz App Demo](http://127.0.0.1:5500/quiz.html)
 
 
 
