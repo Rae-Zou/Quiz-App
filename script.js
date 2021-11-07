@@ -138,7 +138,7 @@ subButton.addEventListener('click', () => {
             loadQuestions()
         } else {
             quiz.innerHTML = `
-                <h2>You got questions ${score}/${myQuiz.length} correctly</h2>
+                <h2>You got ${score}/${myQuiz.length} questions correctly</h2>
                 <button onclick="location.reload()">Try again</button>
             `
         }
