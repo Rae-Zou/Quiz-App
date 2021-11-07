@@ -66,14 +66,6 @@ const myQuiz = [
         d: "None of the above",
         correct: "b",
     },
-    // {
-    //     question: "Which of the following statement is NOT true?",
-    //     a: "A Docker image consists of many layers.",
-    //     b: "Each layer corresponds to a command in an image’s Dockerfile.",
-    //     c: "The layers in a Docker image are immutable. That is, they can never be changed.",
-    //     d: "A Docker image is essentially the description of a small compact virtual machine.",
-    //     correct: "d",
-    // },
 ];
 
 const quiz = document.getElementById('quiz')
